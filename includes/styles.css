@@ -1,0 +1,273 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fff;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*###########################################################
+###################### Header #############################
+###########################################################*/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.titulo {
+    color: purple;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+header {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to right, #04ff8a70, #7886ff81), url(../img/sideBar.png);
+    background-size: 100%, 50%;
+    background-attachment: fixed;
+    position: relative;
+}
+.navg-main ul {
+    display: flex;
+}
+.navg-main ul li {
+    padding: 10px;
+}
+.navg-main ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+    text-shadow: 9px 9px 18px #7b34ff, 3px 3px 5px #1eff96;
+}
+.navg-main ul.navg {
+    flex: 1;
+    margin-left: 20px;
+}
+.navg li > a {
+    font-size: 23px;
+}
+.navg {
+    padding: 30px 50px 0 0;
+}
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+header .textos-cabecera {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: cursive;
+}
+.textos-cabecera h1 {
+    color: #fff;
+    font-size: 60px;
+    animation: neon 2s infinite alternate;
+
+}
+@keyframes neon {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        text-shadow: 9px 9px 18px #7b34ff, 
+                     3px 3px 5px #1eff96,
+                    -3px -3px 5px #2aff8d,
+                    -9px -9px 27px #9334ff;
+    }
+    20%, 30%, 50% {
+        text-shadow: none;
+        color: #fff;
+    }
+}
+.textos-cabecera h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    animation: neon 2s infinite alternate;
+}
+
+/*#####################################################
+################ BARRAS DE PROGRESO #################
+#####################################################*/
+
+.div-cont-lg {
+    display: flex;
+    width: 90%;
+}
+.div-cont-lg h1 {
+    margin-top: 30px;
+}
+.div-bars {
+    font-family: cursive;
+    width: 50%;
+    margin-left: 20px;
+}
+.div-bars h1 {
+    text-align: center;
+    color: #a1a1a1;
+}
+.div-lg {
+    background: #555;
+    width: 100%;
+    border-radius: 30px;
+    margin: 30px;
+    box-shadow: 0 0 3px 0 #000;
+}
+.div-cont-lg h1 {
+    left: 21%;
+    position: absolute;
+    color: #fff;
+}
+.PHP {
+    width: 93%;
+    background:  linear-gradient(to right, #04ff8a, #7886ff);
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+}
+.JS {
+    width: 75%;
+    background:  linear-gradient(to right, #04ff8a, #7886ff);
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+}
+.HTML {
+    width: 98%;
+    background:  linear-gradient(to right, #04ff8a, #7886ff);
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+}
+.CSS {
+    width: 93%;
+    background:  linear-gradient(to right, #04ff8a, #7886ff);
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+}
+.info {
+    display: flex;
+    /*margin-top: 50px;*/
+    background: #f1f1f1; 
+}
+.sobre-mi {
+    margin-bottom: 30px;
+}
+.sobre-mi h3 {
+    align-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: cursive;
+    font-size: 23px;
+    color: #a0a0a0;
+
+}
+.sobre-mi p {
+    font-size: 18px;
+    justify-content: space-around;
+    text-align: justify;
+    color: #a1a1a1;
+}
+.descripcion {
+    width: 40%;
+    position: relative;
+    left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.descripcion img {
+    width: 28%;
+    border-radius: 100%;
+    background: #555;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px 0 #000;
+    color: rgba(23, 37, 224, 0.513);
+    background-image: 
+}
+
+/*###################################################
+##################### GRID ########################
+###################################################*/
+
+.img-div {
+    align-content: center;
+    text-align: center;
+}
+.img-port {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 0 6px 0 #000;
+    cursor: pointer;
+}
+.img-sect {
+	width: 100%;
+    display: table;
+    align-content: center;
+    text-align: center;
+    margin-top: 100px;
+    background: #fff;
+}
+.div-imgs {
+	display: inline-grid;
+	padding: 0;
+    margin: 12px 15px;
+    width: calc(33% - 20px);
+}
+.div-h1 {
+	background: linear-gradient(to right, #5900cc9d, #29e066da);
+	width: 70%;
+	margin: 60px auto;
+	border-radius: 30px;
+}
+.div-h1 h1 {
+	align-content: center;
+	text-align: center;
+	font-family: cursive;
+	color:#fff;
+}
+.M3D {
+	background: #f3f3f3;
+	width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+footer {
+    color: #a1a1a1;
+    background: #f1f1f1;
+    margin-top: 60px;
+    padding: 5px 0;
+}
+.Email img {
+    width: 50px;
+
+}
+.contactame-sect {
+    display: flex;
+}
+.Email {
+    text-align: center;
+    margin: auto;
+}
+.copy {
+    text-align: center;
+    margin: 10px 0;
+}
+.copy hr {
+    height: 3px;
+    background-color: #29e066da;
+    border: 0;
+    box-shadow: 0 0 5px 0 #000;
+}
+.copy h2 {
+    margin: 20px 0;
+}
+.Email h1 {
+    color: #5900cc9d;
+    font-family: cursive;
+    text-shadow: 2px 2px 2px #000;
+}
